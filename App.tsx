@@ -1,23 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import HomeScreen from './components/HomeScreen'
-import globalStyles from './components/styles';
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
+import HomeScreen from './components/HomeScreen';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={ globalStyles.h1 }>Bienvenido!</Text>
-      <HomeScreen/>
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingBottom: 15
-  },
+const MainNavigator = createStackNavigator({
+  Home: {screen: HomeScreen},
 });
+
+const App = createAppContainer(MainNavigator);
+
+export default App;
+
