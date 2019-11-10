@@ -12,6 +12,11 @@ const globalStyles =  StyleSheet.create({
             fontFamily: 'Roboto',
             fontWeight: 'bold',
             color: 'white'
+        },
+        h1 :{
+            fontSize: 32,
+            textAlign: 'center',
+            paddingBottom: 35
         }
     })
 
