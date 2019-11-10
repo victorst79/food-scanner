@@ -1,18 +1,11 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  Button,
-} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import HomeScreen from './components/HomeScreen'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Button
-          title="Request"
-          onPress={this.foo}
-      />
+      <HomeScreen/>
     </View>
   );
 }
@@ -23,5 +16,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingBottom: 15
   },
 });
