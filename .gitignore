@@ -10,5 +10,14 @@ npm-debug.*
 web-build/
 web-report/
 
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
 # macOS
 .DS_Store
