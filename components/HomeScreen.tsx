@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Alert } from 'react-native';
+import { View, Text, Alert, StyleSheet, TouchableHighlight } from 'react-native';
+import globalStyles from './styles';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -8,11 +9,14 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <Button
-      title="Press me"
-      onPress={() => Alert.alert('Simple Button pressed')}>
-
-      </Button>
+      <View>
+        <TouchableHighlight
+        underlayColor='#005662'
+        onPress={() => Alert.alert('Simple Button pressed')}
+        style={globalStyles.btn}>
+          <Text style={globalStyles.btntext}>PULSA AQUI</Text>
+        </TouchableHighlight>
+      </View>
     )
   }
 }

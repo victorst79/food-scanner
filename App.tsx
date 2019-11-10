@@ -6,7 +6,6 @@ export default function App() {
   return (
     <View style={styles.container}>
       <HomeScreen/>
-      <Text>Open up App.tsx to start working on your app!</Text>
     </View>
   );
 }
@@ -17,5 +16,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingBottom: 15
   },
 });
