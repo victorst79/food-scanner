@@ -32,6 +32,7 @@ export default class HomeScreen extends React.Component {
     
     return (
       <View style={styles.container}>
+        <Text style={ globalStyles.h1} > Bienvenido!</Text>
         <TouchableHighlight
         underlayColor='#005662'
         onPress={() => Alert.alert('Simple Button pressed')}
