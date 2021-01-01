@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import Home from '../views/Home.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -10,7 +9,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/home',
     name: 'Home',
-    component: Home
+    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
+  },
+  {
+    path: '/scanner',
+    name: 'Scanner',
+    component: () => import(/* webpackChunkName: "scanner" */ '../views/Scanner.vue')
   }
 ]
 

@@ -8,7 +8,7 @@
       </ion-header>
     
       <div id="container">
-        <strong>Ready to create an app?</strong>
+        <strong>Scanner</strong>
         <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
       </div>
     </ion-content>
@@ -20,7 +20,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Home',
+  name: 'Scanner',
   components: {
     IonContent,
     IonHeader,
