@@ -1,16 +1,23 @@
+
 <template>
-  <ion-page>    
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Blank</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
-      <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-      </div>
+  <ion-page>
+    <ion-header :translucent="true">
+      <ion-toolbar>
+        <ion-title>Blank</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content :fullscreen="true" class="ion-padding">
+
+      <ion-card>
+        <ion-card-header>
+          <h2>This is the Camera Page</h2>
+        </ion-card-header>
+        <ion-card-content>
+          <div>Showing the use of the Capacitor Camera plugin and the vue-router for changing pages in the application</div>
+
+        </ion-card-content>
+      </ion-card>
     </ion-content>
   </ion-page>
 </template>
