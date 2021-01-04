@@ -2,7 +2,8 @@
   <ion-page>
     <ion-content>
       <ion-tabs>
-        <ion-tab-bar slot="bottom">
+        <ion-tab-bar>
+
           <ion-tab-button tab="home" href="/tabs/home">
             <ion-icon :icon="imageOutline" />
             <ion-label>Home</ion-label>
@@ -13,10 +14,6 @@
             <ion-label>Scanner</ion-label>
           </ion-tab-button>
 
-          <ion-tab-button tab="history" href="/tabs/history">
-            <ion-icon :icon="locateOutline" />
-            <ion-label>History</ion-label>
-          </ion-tab-button>
         </ion-tab-bar>
       </ion-tabs>
     </ion-content>

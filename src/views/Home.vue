@@ -9,15 +9,6 @@
 
     <ion-content :fullscreen="true" class="ion-padding">
 
-      <ion-card>
-        <ion-card-header>
-          <h2>This is the Camera Page</h2>
-        </ion-card-header>
-        <ion-card-content>
-          <div>Showing the use of the Capacitor Camera plugin and the vue-router for changing pages in the application</div>
-
-        </ion-card-content>
-      </ion-card>
     </ion-content>
   </ion-page>
 </template>
