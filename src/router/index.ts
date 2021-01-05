@@ -35,6 +35,11 @@ const routes: Array<RouteRecordRaw> = [
         name: "Scanner",
         component: () => import(/* webpackChunkName: "scanner" */ '../views/Scanner.vue')
       },
+      {
+        path: "favorites",
+        name: "Favorites",
+        component: () => import(/* webpackChunkName: "scanner" */ '../views/Favorites.vue')
+      },
     ]
   }
 ]

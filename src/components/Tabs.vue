@@ -10,8 +10,13 @@
           </ion-tab-button>
 
           <ion-tab-button tab="scanner" href="/tabs/scanner">
-            <ion-icon :icon="cloudOutline" />
+            <ion-icon :icon="barcodeOutline" />
             <ion-label>Scanner</ion-label>
+          </ion-tab-button>
+
+          <ion-tab-button tab="favorites" href="/tabs/favorites">
+            <ion-icon :icon="cloudOutline" />
+            <ion-label>Favorites</ion-label>
           </ion-tab-button>
 
         </ion-tab-bar>
@@ -30,7 +35,12 @@ import {
   IonIcon,
   IonPage,
 } from "@ionic/vue";
-import { cloudOutline, imageOutline, locateOutline } from "ionicons/icons";
+import { 
+  cloudOutline, 
+  imageOutline, 
+  locateOutline,
+  barcodeOutline
+} from "ionicons/icons";
 
 export default {
   name: "Tabs",
@@ -48,6 +58,7 @@ export default {
       cloudOutline,
       imageOutline,
       locateOutline,
+      barcodeOutline
     };
   },
 };

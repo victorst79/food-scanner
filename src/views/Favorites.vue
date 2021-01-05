@@ -3,37 +3,18 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Home</ion-title>
+        <ion-title>Favorites</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content :fullscreen="true" class="ion-padding">
-      <ion-card>
-        <ion-card-header>
-          <ion-card-subtitle>Last Scans</ion-card-subtitle>
-          <ion-card-title>History</ion-card-title>
-        </ion-card-header>
 
-        <ion-card-content>
-          History entries
-        </ion-card-content>
-      </ion-card>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { 
-  IonContent, 
-  IonHeader, 
-  IonPage, 
-  IonTitle, 
-  IonToolbar,
-  IonCard, 
-  IonCardContent, 
-  IonCardSubtitle, 
-  IonCardTitle, 
-} from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -43,11 +24,7 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar,
-    IonCard, 
-    IonCardContent, 
-    IonCardSubtitle, 
-    IonCardTitle,
+    IonToolbar
   }
 });
 </script>
