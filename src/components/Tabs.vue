@@ -5,7 +5,7 @@
         <ion-tab-bar>
 
           <ion-tab-button tab="home" href="/tabs/home">
-            <ion-icon :icon="imageOutline" />
+            <ion-icon :icon="homeOutline" />
             <ion-label>Home</ion-label>
           </ion-tab-button>
 
@@ -15,7 +15,7 @@
           </ion-tab-button>
 
           <ion-tab-button tab="favorites" href="/tabs/favorites">
-            <ion-icon :icon="cloudOutline" />
+            <ion-icon :icon="starOutline" />
             <ion-label>Favorites</ion-label>
           </ion-tab-button>
 
@@ -36,9 +36,8 @@ import {
   IonPage,
 } from "@ionic/vue";
 import { 
-  cloudOutline, 
-  imageOutline, 
-  locateOutline,
+  homeOutline,
+  starOutline,
   barcodeOutline
 } from "ionicons/icons";
 
@@ -55,9 +54,8 @@ export default {
   },
   setup() {
     return {
-      cloudOutline,
-      imageOutline,
-      locateOutline,
+      homeOutline,
+      starOutline,
       barcodeOutline
     };
   },

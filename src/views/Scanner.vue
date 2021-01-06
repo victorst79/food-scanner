@@ -8,15 +8,20 @@
       </ion-header>
     
       <div id="container">
-        <strong>Scanner</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        <ion-button @click="openScanner">Default</ion-button>
       </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonContent, 
+  IonHeader, 
+  IonPage, 
+  IonTitle, 
+  IonToolbar, 
+  IonButton 
+} from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
@@ -26,7 +31,13 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    IonButton
+  },
+  methods: {
+    openScanner: function() {
+      console.log("Scanner")
+    } 
   }
 });
 </script>
