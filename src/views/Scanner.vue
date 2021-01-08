@@ -23,7 +23,7 @@ import { IonContent,
   IonButton 
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
-import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { Plugins } from '@capacitor/core';
 
 export default defineComponent({
   name: 'Scanner',
@@ -37,8 +37,16 @@ export default defineComponent({
   },
   methods: {
     openScanner: async function() {
-      const data = await BarcodeScanner.scan();
-      console.log(data)
+      const { BarcodeScanner } = Plugins;
+
+      BarcodeScanner.hideBackground(); // make background of WebView transparent
+
+      const result = await BarcodeScanner.startScan(); // start scanning and wait for a result
+
+      // if the result has content
+      if (result.hasContent) {
+        console.log(result.content); // log the raw scanned content
+      }
     } 
   }
 });
