@@ -6,7 +6,6 @@
           <ion-title size="large">Blank</ion-title>
         </ion-toolbar>
       </ion-header>
-    
       <div id="container">
         <ion-button @click="openScanner">Default</ion-button>
       </div>
@@ -23,6 +22,7 @@ import { IonContent,
   IonButton 
 } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import { BarcodeScanner } from "@ionic-native/barcode-scanner/ngx"
 
 export default defineComponent({
   name: 'Scanner',
@@ -36,8 +36,8 @@ export default defineComponent({
   },
   methods: {
     openScanner: function() {
-      console.log("Scanner")
-    } 
+      console.log(BarcodeScanner)
+    }
   }
 });
 </script>
